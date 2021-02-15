@@ -16,3 +16,5 @@ services:
         environment:
           - SERVICE_PORT=6001
           - ENCRYPTOR_ENDPOINT=ws://string_encryptor_demo:5001/
+          - STRING_LEN_MIN=10
+          - STRING_LEN_MAX=30
