@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+    string_encryptor_demo:
+        build: ./StringEncryptorDemo
+        #service would be availble on host machine under 5002 (for debugging purposes)
+        ports:
+          - "5002:5001"
+        #default port is 5000. we will override it to 5001
+        environment:
+          - SERVICE_PORT=5001
+
+    string_randomizer_demo:
+        build: ./StringRandomizerDemo
+        ports:
+          - "6002:6001"
+        environment:
+          - SERVICE_PORT=6001
+          - ENCRYPTOR_ENDPOINT=ws://string_encryptor_demo:5001/
