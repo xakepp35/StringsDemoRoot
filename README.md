@@ -1,4 +1,8 @@
 # StringsDemoRoot
+This is root repo for ["Go exercise - String encryptor"](https://docs.google.com/document/d/1nF04TsqF1M1BaNbu5nnqZzkO9MSFUMw_btsX4Txbbi4/edit).
+Demo does consists of following microservices:
+- [StringEncryptorDemo](https://github.com/xakepp35/StringEncryptorDemo)
+- [StringRandomizerDemo](https://github.com/xakepp35/StringRandomizerDemo)
 
 ## Prequesites
 [docker](https://docs.docker.com/get-docker/) & [docker-compose](https://docs.docker.com/compose/install/) must be installed
@@ -26,5 +30,6 @@ It would:
  - Await for sha-256 response from encryptor worker pool
  - Output them as raw text in browser
 
-All env configuration is stored in `StringsDemoRoot/docker-compose.yml` file
+All env configuration is stored in `StringsDemoRoot/docker-compose.yml` file.
+
 Good luck ;-D
